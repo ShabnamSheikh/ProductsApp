@@ -1,0 +1,58 @@
+
+  <div class="card">
+    <div class="card-body">
+      <form [formGroup]="angForm" (ngSubmit)="onSubmit()">
+        <div class='card-header'>
+            {{title}}
+        </div>
+       <div class='card-body'>
+        <div class='form-group'>
+            <table class='table'>
+                <tbody>
+                    <tr>
+                        <td><label >Product Id</label></td>
+                        <td><input type="text" class="form-control" formControlName="productId"/></td>
+                    </tr>
+                    <tr>
+                        <td><label >Product Name</label></td>
+                        <td><input type="text" class="form-control"  formControlName="productName"/></td>
+                    </tr>
+                    <tr>
+                        <td><label >Product Code</label></td>
+                        <td><input type="text" class="form-control"  formControlName="productCode"/></td>
+                    </tr>
+                    <tr>
+                        <td><label >Release Date</label></td>
+                        <td><input type="text"class="form-control"  formControlName="releaseDate"/></td>
+                    </tr>
+                    <tr>
+                        <td><label >Description</label></td>
+                        <td><input type="text" class="form-control" formControlName="discription"/></td>
+                    </tr> 
+                    <tr>
+                        <td><label >Price</label></td>
+                        <td><input type="text" class="form-control" formControlName="price"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label >Star Rating</label></td>
+                        <td><input type="text" formControlName="starRating"/></td>
+                    </tr>
+                    <tr>
+                        <td><label >ImageUrl</label></td>
+                        <td><input type="text" class="form-control" formControlName="ImageUrl"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><div class="form-group">
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </div>
+                      </td>
+                        
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+  </form>
+</div>
